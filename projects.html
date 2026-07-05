@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects · Ameesha Agrawal</title>
+  <meta property="og:title" content="Projects · Ameesha Agrawal">
+  <meta name="description" content="Ameesha Agrawal — blockchain engineer, 0→1 builder, founding engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+  body{margin:0;background:#FDFCFA}
+  ::selection{background:#C1521A;color:#FDFCFA}
+</style>
+</head>
+<body>
+
+
+
+<div style="background:#FDFCFA;color:#1C1B1A;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;min-height:100vh">
+  <div style="max-width:760px;margin:0 auto;padding:0 32px">
+
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:44px 0 0">
+      <a href="index.html" style="font:italic 500 17px/1 'Newsreader',Georgia,serif;color:#1C1B1A;text-decoration:none">Ameesha Agrawal</a>
+      <div style="display:flex;gap:28px;font:13px/1 -apple-system,sans-serif;color:#8A857D">
+        <a href="projects.html" style="color:#1C1B1A;text-decoration:none">Projects</a>
+        <a href="writing.html" style="color:#8A857D;text-decoration:none">Writing</a>
+        <a href="philosophy.html" style="color:#8A857D;text-decoration:none">Philosophy</a>
+        <a href="now.html" style="color:#8A857D;text-decoration:none">Now</a>
+        <a href="beyond-work.html" style="color:#8A857D;text-decoration:none">Beyond Work</a>
+        <a href="contact.html" style="color:#8A857D;text-decoration:none">Contact</a>
+      </div>
+    </nav>
+
+    <div style="padding:110px 0 24px">
+      <div style="font:500 60px/1.08 'Newsreader',Georgia,serif;letter-spacing:-.01em">Projects</div>
+      <div style="margin-top:24px;font:italic 400 19px/1.6 'Newsreader',Georgia,serif;color:#3A3835;max-width:560px">Case studies in systems, not showcases of features. Each one is a record of a problem, the constraints around it, and the trade-offs I chose.</div>
+    </div>
+
+    <div style="padding:70px 0 60px">
+
+      <!-- CASE STUDY 01 -->
+      <div style="padding:60px 0;border-top:1px solid #EAE7E1">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px">
+          <div style="font:13px/1 ui-monospace,Menlo,monospace;color:#C1521A">01</div>
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D">Aug 2022 — May 2026</div>
+        </div>
+
+        <div style="font:500 38px/1.15 'Newsreader',Georgia,serif;letter-spacing:-.01em;margin-bottom:16px">Building a cross-chain protocol from zero to $150M TVL</div>
+        <div style="font:italic 400 18px/1.6 'Newsreader',Georgia,serif;color:#3A3835;margin-bottom:48px;max-width:600px">Founding engineer at Socket Tech — four years of taking a cross-chain messaging protocol from whiteboard to production, and staying through the part where it had to keep working at scale.</div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">The problem</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">Every blockchain was an island. Building a dApp that spanned multiple chains meant writing custom integration code for every pair, handling different finality models, different message formats, different failure modes. There was no standard way to move value or data across chains without rebuilding the plumbing from scratch each time. Socket's bet was that this coordination layer could be generalised — and that someone had to build it.</div>
+        </div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">What I built</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">I was the founding engineer on Data Layer — the core cross-chain messaging protocol. That meant writing the Solidity contracts, the TypeScript relayer backend running on AWS ECS and Lambda, and the Foundry test suites that kept the protocol honest as it grew. I also designed SuperToken, an omnichain token standard for seamless cross-chain asset transfers, and shipped an EOA deposit address system that let users bridge directly from any major CEX — Binance, Coinbase, KuCoin — to any supported chain without touching a traditional bridge UI. As the protocol scaled, I set up the Prometheus and Grafana observability stack with Discord alerting, served on-call for partner integrations, and helped debug production incidents under real financial pressure.</div>
+        </div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">What made it hard</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">Finality isn't universal. Different chains settle at different speeds, with different reorg risks. Getting that wrong meant real money at risk. 50+ chain integrations meant each one had its own edge cases — and we were adding them while the protocol was already carrying live traffic. The hardest moments weren't the architecture decisions; they were the production incidents at 2am where I had to reconstruct exactly what happened across four chains simultaneously, with partners waiting.</div>
+        </div>
+
+        <div style="margin-bottom:40px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">Outcome</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">$150M+ TVL. 50+ integrated chains. The observability work I did in year one is what made the incidents in year three survivable — which is the real measure of whether you built it right the first time.</div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Solidity</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">TypeScript</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">AWS ECS · Lambda</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Foundry</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Prometheus · Grafana</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Cross-Chain Messaging</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">50+ EVM chains</span>
+        </div>
+      </div>
+
+      <!-- CASE STUDY 02 -->
+      <div style="padding:60px 0;border-top:1px solid #EAE7E1">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px">
+          <div style="font:13px/1 ui-monospace,Menlo,monospace;color:#C1521A">02</div>
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D">May — Dec 2021</div>
+        </div>
+
+        <div style="font:500 38px/1.15 'Newsreader',Georgia,serif;letter-spacing:-.01em;margin-bottom:16px">Founding engineer on a multi-chain prediction market</div>
+        <div style="font:italic 400 18px/1.6 'Newsreader',Georgia,serif;color:#3A3835;margin-bottom:48px;max-width:600px">Seven months at ValueNetwork.live — joining before the architecture was decided, shipping to mainnet on four chains, and building the automation that made the whole thing actually run.</div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">The problem</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">Prediction markets on-chain were technically interesting but hard to use and hard to trust. Resolving markets fairly required a trustless price source — and running them across multiple chains meant the same contracts had to behave consistently on Ethereum, Binance Smart Chain, Polygon, and Qtum, each with different tooling and different community expectations.</div>
+        </div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">What I built</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">I joined as the founding engineer with no prior architecture. That meant making the calls: which oracle to use for price resolution (Chainlink), how to structure the market lifecycle, what the token model should look like. I shipped the core prediction market contracts, a VNTWIN governance token with Vesting and Staking contracts, and a Node.js/MySQL backend with CRON automation for market creation and resolution. The CRON layer was the thing that made it feel like a real product rather than a demo — markets opened, ran, and closed without manual intervention.</div>
+        </div>
+
+        <div style="margin-bottom:36px">
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">What I learned</div>
+          <div style="font:400 17px/1.8 'Newsreader',Georgia,serif;color:#2A2826;max-width:660px">Multi-chain from day one sounds straightforward until you hit the edge cases — gas models differ, block times differ, and your contracts need to behave correctly on all of them. The real lesson was about the founding engineer trade-off: you make decisions fast and at low information, and those decisions live in production for a long time. The pressure to ship something real in seven months made every architectural choice feel heavier than it would have in a larger team with more runway.</div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Solidity</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Chainlink Oracles</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Node.js · MySQL</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Ethereum · BSC · Polygon · Qtum</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">ERC-20 · Vesting · Staking</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="padding:36px 0 60px;border-top:1px solid #EAE7E1;display:flex;justify-content:space-between;align-items:center">
+      <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D">© 2026 Ameesha Agrawal</div>
+      <div style="font:13px/1 -apple-system,sans-serif;color:#1C1B1A">agrawalameesha21@gmail.com</div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
