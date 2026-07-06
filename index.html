@@ -13,6 +13,7 @@
   body{margin:0;background:#FDFCFA}
   ::selection{background:#C1521A;color:#FDFCFA}
 </style>
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -20,12 +21,12 @@
 
 <div style="background:#FDFCFA;color:#1C1B1A;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;min-height:100vh">
 
-  <div style="max-width:760px;margin:0 auto;padding:0 32px">
+  <div class="page-wrap" style="max-width:760px;margin:0 auto;padding:0 32px">
 
     <!-- NAV -->
-    <nav style="display:flex;align-items:center;justify-content:space-between;padding:44px 0 0">
+    <nav class="site-nav" style="display:flex;align-items:center;justify-content:space-between;padding:44px 0 0">
       <a href="index.html" style="font:italic 500 17px/1 'Newsreader',Georgia,serif;color:#1C1B1A;text-decoration:none">Ameesha Agrawal</a>
-      <div style="display:flex;gap:28px;font:13px/1 -apple-system,sans-serif;color:#8A857D">
+      <div class="nav-links" style="display:flex;gap:28px;font:13px/1 -apple-system,sans-serif;color:#8A857D">
         <a href="projects.html" style="color:#8A857D;text-decoration:none">Projects</a>
         <a href="writing.html" style="color:#8A857D;text-decoration:none">Writing</a>
         <a href="philosophy.html" style="color:#8A857D;text-decoration:none">Philosophy</a>
@@ -36,32 +37,32 @@
     </nav>
 
     <!-- HERO -->
-    <div style="padding:150px 0 100px">
-      <div style="font:500 92px/1.02 'Newsreader',Georgia,serif;letter-spacing:-.01em">Ameesha<br>Agrawal</div>
-      <div style="margin-top:36px;font:italic 400 25px/1.55 'Newsreader',Georgia,serif;color:#3A3835;max-width:520px">There's a moment — when a system you imagined actually runs — that still feels a little magical to me. Seven years in and it hasn't worn off.</div>
+    <div class="hero-section" style="padding:150px 0 100px">
+      <div class="hero-title" style="font:500 92px/1.02 'Newsreader',Georgia,serif;letter-spacing:-.01em">Ameesha<br>Agrawal</div>
+      <div class="hero-subtitle" style="margin-top:36px;font:italic 400 25px/1.55 'Newsreader',Georgia,serif;color:#3A3835;max-width:520px">There's a moment — when a system you imagined actually runs — that still feels a little magical to me. Seven years in and it hasn't worn off.</div>
     </div>
 
     <!-- INTRO -->
     <div style="padding-bottom:120px">
-      <div style="font:400 19px/1.85 'Newsreader',Georgia,serif;color:#2A2826">I've spent seven years as a founding engineer — building blockchain infrastructure, cross-chain protocols, developer tooling, and the observability layers that hold it all together. The thing I kept enjoying was always the same: finding the workaround nobody had documented, making something genuinely complicated feel invisible to everyone depending on it.<br><br>I'm now deliberately moving toward AI and quantum computing. Same curiosity, new territory.</div>
+      <div style="font:400 19px/1.85 'Newsreader',Georgia,serif;color:#2A2826">I've spent seven years as a founding engineer — building blockchain infrastructure, cross-chain protocols, developer tooling, and the observability layers that hold it all together. The thing I kept enjoying was always the same: finding the workaround nobody had documented, making something genuinely complicated feel invisible to everyone depending on it.<br><br>I'm now expanding into AI and quantum computing alongside my blockchain work — same curiosity, broader territory.</div>
     </div>
 
     <!-- NUMBERS -->
     <div style="padding-bottom:100px">
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:48px 0">
-        <div style="padding-right:32px">
+      <div class="numbers-grid" style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:48px 0">
+        <div class="numbers-item" style="padding-right:32px">
           <div style="font:500 42px/1 'Newsreader',Georgia,serif;color:#C1521A">$150M+</div>
           <div style="margin-top:12px;font:13px/1.55 -apple-system,sans-serif;color:#6B6763">TVL on the cross-chain protocol I shipped at Socket Tech</div>
         </div>
-        <div style="padding:0 32px;border-left:1px solid #EAE7E1">
+        <div class="numbers-item numbers-item-right" style="padding:0 32px;border-left:1px solid #EAE7E1">
           <div style="font:500 42px/1 'Newsreader',Georgia,serif;color:#C1521A">50+</div>
           <div style="margin-top:12px;font:13px/1.55 -apple-system,sans-serif;color:#6B6763">blockchain networks integrated in a single protocol</div>
         </div>
-        <div style="padding:0 32px;border-left:1px solid #EAE7E1">
+        <div class="numbers-item numbers-item-right" style="padding:0 32px;border-left:1px solid #EAE7E1">
           <div style="font:500 42px/1 'Newsreader',Georgia,serif;color:#C1521A">7+</div>
           <div style="margin-top:12px;font:13px/1.55 -apple-system,sans-serif;color:#6B6763">years building production systems from scratch</div>
         </div>
-        <div style="padding-left:32px;border-left:1px solid #EAE7E1">
+        <div class="numbers-item numbers-item-right" style="padding-left:32px;border-left:1px solid #EAE7E1">
           <div style="font:500 42px/1 'Newsreader',Georgia,serif;color:#C1521A">40%</div>
           <div style="margin-top:12px;font:13px/1.55 -apple-system,sans-serif;color:#6B6763">throughput improvement delivered on a production DEX</div>
         </div>
@@ -72,20 +73,20 @@
     <div style="padding-bottom:120px">
       <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:32px">Where I'm useful</div>
       <div>
-        <div style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
-          <div style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">0→1 founding engineer</div>
+        <div class="useful-row" style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
+          <div class="useful-label" style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">0→1 founding engineer</div>
           <div style="font:15px/1.65 -apple-system,sans-serif;color:#3A3835">Joining before the architecture is settled. Making the foundational decisions early so they compound in the right direction — and staying through the part where things have to actually keep working.</div>
         </div>
-        <div style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
-          <div style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">Blockchain & DeFi</div>
+        <div class="useful-row" style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
+          <div class="useful-label" style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">Blockchain & DeFi</div>
           <div style="font:15px/1.65 -apple-system,sans-serif;color:#3A3835">Protocol design, smart contracts, cross-chain infrastructure, EVM chains. Seven years of production systems across DeFi, NFTs, and cross-chain messaging.</div>
         </div>
-        <div style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
-          <div style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">Smart contract audits</div>
+        <div class="useful-row" style="padding:28px 0;border-top:1px solid #EAE7E1;display:flex;gap:40px">
+          <div class="useful-label" style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">Smart contract audits</div>
           <div style="font:15px/1.65 -apple-system,sans-serif;color:#3A3835">Security reviews for DeFi protocols — reentrancy, logic flaws, economic attack vectors. Delivered to production audit standard with remediation support.</div>
         </div>
-        <div style="padding:28px 0;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;display:flex;gap:40px">
-          <div style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">AI & infrastructure <em style="font-size:13px;color:#8A857D"> — open</em></div>
+        <div class="useful-row" style="padding:28px 0;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;display:flex;gap:40px">
+          <div class="useful-label" style="font:500 19px/1.3 'Newsreader',Georgia,serif;min-width:210px;flex-shrink:0">AI & infrastructure <em style="font-size:13px;color:#8A857D"> — open</em></div>
           <div style="font:15px/1.65 -apple-system,sans-serif;color:#3A3835">Actively moving into AI systems. Open to the right early-stage problem where infrastructure instincts and 0→1 experience matter more than domain tenure.</div>
         </div>
       </div>

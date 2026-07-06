@@ -1,0 +1,59 @@
+/* Responsive styles */
+
+/* Page wrapper */
+@media (max-width: 700px) {
+  .page-wrap { padding: 0 20px !important; }
+}
+
+/* Nav */
+@media (max-width: 700px) {
+  .site-nav { align-items: flex-start !important; gap: 14px !important; }
+  .nav-links { flex-wrap: wrap !important; gap: 10px 14px !important; font-size: 12px !important; }
+}
+
+/* Hero */
+@media (max-width: 700px) {
+  .hero-section  { padding: 80px 0 60px !important; }
+  .hero-title    { font-size: 52px !important; line-height: 1.05 !important; }
+  .hero-subtitle { font-size: 19px !important; }
+}
+
+/* Inner page headers */
+@media (max-width: 700px) {
+  .page-header { padding: 64px 0 16px !important; }
+  .page-title  { font-size: 40px !important; }
+}
+
+/* Numbers grid: 4-col → 2x2 */
+@media (max-width: 700px) {
+  .numbers-grid {
+    grid-template-columns: 1fr 1fr !important;
+    padding: 32px 0 !important;
+    gap: 32px 0 !important;
+  }
+  .numbers-item       { padding: 0 !important; border-left: none !important; }
+  .numbers-item-right { padding-left: 20px !important; border-left: 1px solid #EAE7E1 !important; }
+}
+
+/* Where I'm useful: side-by-side → stacked */
+@media (max-width: 700px) {
+  .useful-row   { flex-direction: column !important; gap: 8px !important; }
+  .useful-label { min-width: unset !important; font-size: 17px !important; }
+}
+
+/* Contact form fields: side-by-side → stacked */
+@media (max-width: 700px) {
+  .form-row { flex-direction: column !important; }
+}
+
+/* Philosophy / project rows with flex layout */
+@media (max-width: 700px) {
+  .split-row { flex-direction: column !important; gap: 8px !important; }
+  .split-label { min-width: unset !important; }
+}
+
+/* Reduce heavy vertical padding on mobile */
+@media (max-width: 700px) {
+  .section-pad    { padding-bottom: 70px !important; }
+  .case-study-pad { padding: 40px 0 !important; }
+}
