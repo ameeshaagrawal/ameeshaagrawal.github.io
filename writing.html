@@ -40,9 +40,51 @@
     </div>
 
     <div style="padding:70px 0 130px">
-      <div style="padding:48px 0;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1">
-        <div style="font:italic 400 21px/1.7 'Newsreader',Georgia,serif;color:#6B6763;max-width:560px">Nothing here yet. I write when I have something to say — not on a schedule.</div>
-      </div>
+      <!-- ESSAY 01 -->
+      <article style="padding:48px 0;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px">
+          <div style="font:13px/1 ui-monospace,Menlo,monospace;color:#C1521A">01</div>
+          <div style="font:13px/1 -apple-system,sans-serif;color:#8A857D">2026</div>
+        </div>
+
+        <h2 style="font:500 36px/1.2 'Newsreader',Georgia,serif;letter-spacing:-.01em;margin:0 0 32px;color:#1C1B1A">From Node.js to FastAPI</h2>
+
+        <div style="font:400 18px/1.85 'Newsreader',Georgia,serif;color:#2A2826;max-width:640px;display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0">I've been working with Node.js for a long time, mostly with Express and TypeScript. So when I recently started working with FastAPI, I expected Python to feel like a completely different backend world.</p>
+
+          <p style="margin:0;font-style:italic;color:#3A3835">Surprisingly, it didn't.</p>
+
+          <p style="margin:0">The API layer felt very familiar. Routes, async/await, dependency injection, request validation — a lot of the concepts I was already used to were there, just expressed in Python.</p>
+
+          <p style="margin:0;font-style:italic;color:#3A3835">What made the transition even smoother was the tooling.</p>
+
+          <p style="margin:0">With <code style="font-family:ui-monospace,Menlo,monospace;font-size:15px;background:#F3EFEA;padding:2px 6px;border-radius:3px">uv</code>, the Python project workflow felt surprisingly close to what I'm used to in Node.js: <code style="font-family:ui-monospace,Menlo,monospace;font-size:15px;background:#F3EFEA;padding:2px 6px;border-radius:3px">pyproject.toml</code>, <code style="font-family:ui-monospace,Menlo,monospace;font-size:15px;background:#F3EFEA;padding:2px 6px;border-radius:3px">uv.lock</code>, version management, and project configuration all made the ecosystem feel much less foreign.</p>
+
+          <p style="margin:0;font-style:italic;color:#3A3835">Then came SQLAlchemy + Alembic.</p>
+
+          <p style="margin:0">Coming from Node.js, I immediately recognized the value of having proper migrations and schema management. And yes, Node.js has similar tools — Prisma, TypeORM, Sequelize, Knex, Drizzle, etc. It's just that in the Python ecosystem, Alembic felt like a very natural companion to SQLAlchemy.</p>
+
+          <p style="margin:0;font-style:italic;color:#3A3835">The other thing I keep thinking about is AI.</p>
+
+          <p style="margin:0">Python is so deeply embedded in the AI/ML ecosystem that learning more Python feels increasingly useful beyond just backend development. FastAPI seems to sit nicely at that intersection — you can build a backend in Python while staying close to the ecosystem where a lot of AI work happens.</p>
+
+          <p style="margin:0">So far, my biggest realization isn't that FastAPI is "better" than Node.js.</p>
+
+          <p style="margin:0">It's that the backend engineering concepts I've learned over the years transfer surprisingly well.</p>
+
+          <p style="margin:0;font-style:italic;color:#3A3835">The language and tooling changed, but the mental models didn't.</p>
+
+          <p style="margin:0">And that made moving from Node.js to FastAPI feel less like starting over and more like adding another tool to my toolbox.</p>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:36px">
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">FastAPI</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Node.js</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">Python</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">uv</span>
+          <span style="font:12px/1 ui-monospace,Menlo,monospace;color:#8A857D;border:1px solid #EAE7E1;padding:5px 10px">SQLAlchemy · Alembic</span>
+        </div>
+      </article>
     </div>
 
     <div style="padding:36px 0 60px;border-top:1px solid #EAE7E1;display:flex;justify-content:space-between;align-items:center">
